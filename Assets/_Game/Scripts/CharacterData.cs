@@ -7,7 +7,7 @@ public class CharacterData : ScriptableObject
 {
     [SerializeField]
     private string _name = "default name";
-
+   
     [SerializeField]
     private CharacterType _characterType = CharacterType.None;
     [SerializeField]
@@ -16,8 +16,8 @@ public class CharacterData : ScriptableObject
     [SerializeField]
     [Tooltip("Radius size where character will see the player")]
     private float _rangeOfAwareness = 10;
-    //[SerializeField]
-    //private bool _canEnterDialogue = true;
+    [SerializeField]
+    private bool _canEnterDialogue = true;
 
     [SerializeField]
     private int _damage = 1;
@@ -30,4 +30,19 @@ public class CharacterData : ScriptableObject
     [Tooltip("Speaks dialogue when entering combat")]
     [TextArea()]
     private string _catchPhrase = "default phrase";
+
+    [SerializeField]
+    private CharacterDialog[] _dialog;
+
+    public string Name => _name;
+    public CharacterType CharacterType => _characterType;
+    public float ChanceToDropItem => _chanceToDropItem;
+    public float RangeOfAwareness => _rangeOfAwareness;
+
+    public int Damage => _damage;
+    public int Health => _health;
+    public int Speed => _speed;
+
+    public string CatchPhrase => _catchPhrase;
+    public CharacterDialog[] Dialog => _dialog;
 }
