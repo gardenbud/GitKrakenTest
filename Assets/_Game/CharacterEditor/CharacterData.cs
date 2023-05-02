@@ -27,10 +27,11 @@ public class CharacterData : ScriptableObject
     private int _speed = 1;
 
     [SerializeField]
-    [Tooltip("Speaks dialogue when interacting")]
+    [Tooltip("Speaks dialogue when entering combat")]
     [TextArea()]
     private string _catchPhrase = "default phrase";
-    [Toottip("Add Dialog sentences here")]
+
+
     [TextArea(3, 10)]
     public string[] sentences;
     public string Name => _name;
