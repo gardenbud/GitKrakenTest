@@ -265,14 +265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d3b7d0e35ea06d42abd51f5ea8ab1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Leslie_Char
-  _characterType: 1
-  _chanceToDropItem: 20
-  _rangeOfAwareness: 0
-  _damage: 0
-  _health: 0
-  _speed: 0
-  _catchPhrase: As if!
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
